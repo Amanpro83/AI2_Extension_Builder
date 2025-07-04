@@ -3,7 +3,7 @@ document.getElementById('extensionForm').addEventListener('submit', async functi
   const formData = new FormData(this);
   const data = Object.fromEntries(formData.entries());
 
-  const response = await fetch('https://your-backend-url.onrender.com/generate', {
+  const response = await fetch('https://ai2-extension-backend.onrender.com', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
